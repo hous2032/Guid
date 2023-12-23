@@ -1,0 +1,67 @@
+.section-filiers{
+
+}
+.section-filiers .filiers{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-filiers ul {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: var(--vertical-pd);
+}
+.section-filiers ul li{
+    background-color: #999;
+    padding: 6px 14px;
+    text-align: center;
+}
+.section-filiers ul li:hover{
+    background-color: var(--bg-color);
+
+}
+.section-filiers ul li.active{
+    background-color: var(--bg-color);
+}
+.section-filiers i{
+    font-size: 40px;
+    background-color: #fff;
+    color: var(--bg-color);
+}
+.section-filiers .filier{
+    padding-top: var(--vertcal-mn);
+    padding-bottom: var(--vertcal-mn);
+    flex-basis: 100%;
+}
+.section-filiers .filier .infos{
+    padding: 12px;
+}
+.section-filiers .filier .infos p{
+    padding: 12px;
+    
+}
+@media (min-width : 768px) {
+    .section-filiers .filier{
+        flex-basis: 50%;
+    }
+}
+@media (min-width : 992px) {
+    .section-filiers .filier{
+        flex-basis: 33.33%;
+    }
+}
+@media (min-width : 1200px) {
+    .section-filiers .filier{
+        flex-basis: 28%;
+    }
+}
+@media (min-width : 1440px) {
+    .section-filiers .filier{
+        flex-basis: 24%;
+    }
+}
